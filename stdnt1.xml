@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="student.css"?>
+<oxford>
+<student>
+<nme>sreryaaa</nme>
+<rollnum>21100000</rollnum>
+<place>mexicoo</place>
+<course>law</course>
+</student>
+<student>
+<nme>poorvii</nme>
+<rollnum>444400</rollnum>
+<place>mexicoo</place>
+<course>law</course>
+</student>
+<student>
+<nme>hareeyan</nme>
+<rollnum>444401</rollnum>
+<place>mexicoo</place>
+<course>law</course>
+</student>
+</oxford>

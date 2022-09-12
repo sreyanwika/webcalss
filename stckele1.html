@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>stckng elements</title>
+<style type="text/css">
+.xyz
+{
+border:solid thin black;
+padding:1cm;
+position:absolute;
+width:300px;
+}
+#layer1
+{
+background-color:lightpink;
+top:150px;
+left:200px;
+z-index:1;
+}
+#layer2
+{
+background-color:skyblue;
+top:200px;
+left:250px;
+z-index:2;
+}
+#layer3
+{
+background-color:maroon;
+top:250px;
+left:300px;
+z-index:2;
+}
+</style>
+<script type="text/javascript">
+var topLayer="layer3";
+function mover(toTop)
+{
+var oldTop=document.getElementById(topLayer).style;
+var newTop=document.getElementById(toTop).style;
+oldTop.zIndex=0;
+newTop.zIndex=5;
+topLayer=document.getElementById(toTop).id;
+}
+</script>
+</head>
+<body bgcolor="lightgreen">
+<h><font color="grey">vis of stck elemnts usng jv</font></h>
+<p id="layer1" class="xyz" onMouseOver="mover('layer1')">.......hyyyy....</p>
+<p id="layer2" class="xyz" onMouseOver="mover('layer2')">.......hellloo....</p>
+<p id="layer3" class="xyz" onMouseOver="mover('layer3')">.......heeeyyyy....</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Paragraph Stacking </title>
+<style type="text/css">
+.xyz
+{
+ border: solid thin black;
+ padding:1cm;
+ position:absolute;
+ width:300px;
+}
+#layer1
+{
+background-color:yellow;
+top:200px; left:400px;
+z-index:1;
+}
+#layer2
+{
+background-color:red;
+position:absolute;
+top:220px; left:420px;
+z-index:2;
+}
+#layer3
+{
+background-color:blue;
+top:240px; left:440px;
+z-index:3;
+}
+</style>
+<script type="text/javascript">
+var topLayer = "layer3";
+function mover(toTop) {
+var oldTop = document.getElementById(topLayer).style;
+var newTop = document.getElementById(toTop).style;
+oldTop.zIndex = 0;
+newTop.zIndex = 5; 
+topLayer = document.getElementById(toTop).id;
+}
+</script>
+</head>
+<body>
+<h3>Visibility of stacked paragraphs using Javascript</h3>
+<p id="layer1" class="xyz" onMouseOver="mover('layer1')">
+------------10CSL78----------</p>
+<p id="layer2" class="xyz" onMouseOver="mover('layer2')">
+------------Web Programming Laboratory----------</p>
+<p id="layer3" class="xyz" onMouseOver="mover('layer3')">
+------------Experiment 5a - Stacking of paragraphs---</p>
+</body>
+</html>

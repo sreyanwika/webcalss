@@ -1,0 +1,32 @@
+client server model
+two typ-client,server
+server-lstn quiries
+client-makes request
+request-response loop
+web servers
+application servers
+database serves
+mail servers
+media servers
+query strings
+http 2 phaese-request,response
+web server 2parts-header,body
+http protocol
+cmn requests-get,post
+get-getback
+post-transmits data by using html not url
+return codes
+200-ok
+301-moved permanently
+304-not modified
+401-unauthorized
+404-not found
+414-request to url is too long
+307-temporary redirect
+400-bad request
+500-internal server error
+adv of web app
+dis of app
+static web-hvehtml pages identical for evry1
+dynamic-running tym programmer,vary from user to user
+client side and server side scripts

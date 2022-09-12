@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fibonacci series in javaa</title>
+</head>
+<body bgcolor="blue">
+<script>
+var v1 = 1, v2 = 2, nxt_num, i;
+var num = parseInt(prompt("enter d limit of fibaccinoo seriess"));
+document.write ("fibonacci series");
+for(var i = 1;i <= num;i++)
+{
+document.write ("</br>"+v1);
+nxt_num = v1+v2;
+v1 = v2;
+v2 = nxt_num;
+}
+</script>
+<h2>
+<button type="button" onclick="fib()">fib</button>
+</h2>
+</body>
+</html>
